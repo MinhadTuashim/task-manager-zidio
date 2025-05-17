@@ -1,0 +1,67 @@
+/* Reset Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* App Background */
+/* Live animated gradient background */
+body {
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #6a11cb, #2575fc);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* Container Styling */
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  margin-top: 8px;
+}
+
+/* Styled Buttons */
+button {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  margin-top: 5px;
+}
+
+button:hover {
+  background: #e68900;
+}
+
+/* Input Fields */
+input {
+  width:80%;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
